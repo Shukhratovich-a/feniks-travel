@@ -1,0 +1,78 @@
+.hero {
+  position: relative;
+
+  height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  color: $text-white;
+
+  @media screen and (max-height: 475px) {
+    height: auto;
+  }
+
+  &::before {
+    @include Overlay;
+    background: $bg-gradient-primary;
+    opacity: 0.7;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 52px;
+
+    background-color: $bg-primary;
+    border-radius: 50px 50px 0 0;
+  }
+}
+
+.hero__background {
+  object-fit: cover;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 3;
+
+  max-width: 750px;
+  padding: 60px 0;
+
+  @include tablet {
+    max-width: 550px;
+  }
+}
+
+.hero__content__heading {
+  margin-bottom: 20px;
+
+  @include H1Bold;
+  text-align: center;
+
+  @include tablet {
+    @include H2Bold;
+  }
+}
+
+.hero__content__title {
+  @include TitleSemibold;
+  text-align: center;
+
+  @include tablet {
+    @include Title2Semibold;
+  }
+}

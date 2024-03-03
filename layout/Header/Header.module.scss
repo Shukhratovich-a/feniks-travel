@@ -1,0 +1,57 @@
+.header {
+  padding: 30px 0;
+
+  @include tablet {
+    padding: 20px 0;
+  }
+}
+
+.header__inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas: "nav logo additions";
+  gap: 30px;
+  align-items: center;
+
+  @include desktop {
+    grid-template-areas: "logo nav additions";
+    grid-template-columns: auto 1fr auto;
+  }
+
+  @include tablet {
+    gap: 20px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  grid-area: nav;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 140px;
+  margin: 0 auto;
+  grid-area: logo;
+
+  @include TitleSemibold;
+  text-align: center;
+
+  background-color: $bg-white;
+  border-radius: 16px;
+}
+
+.header__additions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  grid-area: additions;
+
+  @include tablet {
+    gap: 20px;
+  }
+}

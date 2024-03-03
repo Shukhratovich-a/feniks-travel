@@ -1,0 +1,90 @@
+// FONTS
+$font-inter: "Inter", "Montserrat", "Roboto", "Arial", sans-serif;
+$font-montserrat: "Montserrat", "Inter", "Roboto", "Arial", sans-serif;
+
+// TEXT STYLES
+// heading
+@mixin H1Medium {
+  font-family: $font-montserrat;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+@mixin H1Bold {
+  font-family: $font-montserrat;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+@mixin H2Medium {
+  font-family: $font-montserrat;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+@mixin H2Bold {
+  font-family: $font-montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+@mixin H3Medium {
+  font-family: $font-montserrat;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+@mixin H3Bold {
+  font-family: $font-montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+// title
+@mixin TitleRegular {
+  font-family: $font-montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+@mixin TitleMedium {
+  font-family: $font-montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+@mixin TitleSemibold {
+  font-family: $font-montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+@mixin Title2Regular {
+  font-family: $font-montserrat;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@mixin Title2Medium {
+  font-family: $font-montserrat;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+@mixin Title2Semibold {
+  font-family: $font-montserrat;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 110%;
+}
