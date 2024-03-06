@@ -1,0 +1,15 @@
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  color: $text-white;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
