@@ -88,3 +88,111 @@ $font-montserrat: "Montserrat", "Inter", "Roboto", "Arial", sans-serif;
   font-weight: 600;
   line-height: 110%;
 }
+
+// body
+@mixin BodyRegular {
+  font-family: $font-inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@mixin BodyMedium {
+  font-family: $font-inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@mixin BodySemibold {
+  font-family: $font-inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+@mixin Body2Regular {
+  font-family: $font-inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@mixin Body2Medium {
+  font-family: $font-inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@mixin Body2Semibold {
+  font-family: $font-inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+@mixin Body3Regular {
+  font-family: $font-inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@mixin Body3Medium {
+  font-family: $font-inter;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@mixin Body3Semibold {
+  font-family: $font-inter;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+// caption
+@mixin CaptionRegular {
+  font-family: $font-inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@mixin CaptionMedium {
+  font-family: $font-inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@mixin CaptionSemibold {
+  font-family: $font-inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+// footnote
+@mixin FootnoteRegular {
+  font-family: $font-inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@mixin FootnoteMedium {
+  font-family: $font-inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@mixin FootnoteSemibold {
+  font-family: $font-inter;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 140%;
+}
