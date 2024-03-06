@@ -1,0 +1,53 @@
+.sidebar {
+  position: fixed;
+  z-index: 100;
+
+  width: 100%;
+  height: 100%;
+
+  color: $text-white;
+
+  background-color: $bg-accent;
+}
+
+.sidebar__header {
+  width: 100%;
+}
+
+.sidebar__header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  gap: 20px;
+
+  @include tablet {
+    padding: 20px 0;
+  }
+
+  @include mobile {
+    padding: 15px 0;
+    gap: 15px;
+  }
+}
+
+.sidebar__header__additions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__nav {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.header__nav__link {
+  display: inline-block;
+  padding: 16px;
+
+  @include Title2Medium;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-white;
+}
