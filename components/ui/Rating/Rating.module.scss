@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  color: $text-accent;
+
+  opacity: 0.5;
+
+  &--filled {
+    opacity: 1;
+  }
+}
