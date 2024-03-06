@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.bullet {
+  width: 12px;
+  height: 12px;
+  background-color: $bg-accent;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: width 0.2s ease;
+
+  &--active {
+    width: 36px;
+  }
+}
