@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 140px;
+  margin: 0 auto;
+  grid-area: logo;
+
+  @include TitleSemibold;
+  text-align: center;
+
+  background-color: $bg-white;
+  border-radius: 16px;
+}
