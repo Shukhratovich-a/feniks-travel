@@ -4,6 +4,10 @@
   @include tablet {
     padding: 20px 0;
   }
+
+  @include mobile {
+    padding: 15px 0;
+  }
 }
 
 .header__inner {
@@ -19,7 +23,14 @@
   }
 
   @include tablet {
+    grid-template-areas: "logo additions";
+    grid-template-columns: auto 1fr;
+
     gap: 20px;
+  }
+
+  @include mobile {
+    gap: 15px;
   }
 }
 
@@ -29,29 +40,18 @@
   grid-area: nav;
 }
 
-.header__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 140px;
-  margin: 0 auto;
-  grid-area: logo;
-
-  @include TitleSemibold;
-  text-align: center;
-
-  background-color: $bg-white;
-  border-radius: 16px;
-}
-
 .header__additions {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   gap: 30px;
   grid-area: additions;
 
   @include tablet {
     gap: 20px;
+  }
+
+  @include tablet {
+    gap: 15px;
   }
 }
