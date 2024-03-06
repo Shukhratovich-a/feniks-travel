@@ -1,0 +1,119 @@
+.tours {
+  padding-top: 150px;
+  margin-top: -150px;
+
+  @include tablet {
+    padding-top: 100px;
+    margin-top: -100px;
+  }
+
+  @include mobile {
+    padding-top: 90px;
+    margin-top: -90px;
+  }
+}
+
+.tours__inner {
+  padding-top: 30px;
+  padding-bottom: 80px;
+
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  @include mobile {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+
+.tours__heading {
+  margin-bottom: 30px;
+
+  @include H2Bold;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  @include mobile {
+    margin-bottom: 15px;
+
+    @include H3Bold;
+  }
+}
+
+.tours__list {
+  position: relative;
+
+  padding: 30px;
+  margin: -30px;
+  margin-bottom: 0px;
+
+  @include tablet {
+    padding: 20px;
+    margin: -20px;
+    margin-bottom: 0px;
+  }
+
+  @include mobile {
+    padding: 15px;
+    margin: -15px;
+    margin-bottom: 0px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+
+    height: 100%;
+    width: 30px;
+
+    background: linear-gradient(
+      90deg,
+      rgba($color: $bg-primary, $alpha: 1) 0%,
+      rgba($color: $bg-primary, $alpha: 1) 10%,
+      rgba($color: $bg-primary, $alpha: 0) 100%
+    );
+
+    pointer-events: none;
+    user-select: none;
+
+    @include tablet {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    height: 100%;
+    width: 30px;
+
+    background: linear-gradient(
+      270deg,
+      rgba($color: $bg-primary, $alpha: 1) 0%,
+      rgba($color: $bg-primary, $alpha: 1) 10%,
+      rgba($color: $bg-primary, $alpha: 0) 100%
+    );
+
+    pointer-events: none;
+    user-select: none;
+
+    @include tablet {
+      content: none;
+    }
+  }
+}
