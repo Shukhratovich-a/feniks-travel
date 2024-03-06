@@ -1,0 +1,108 @@
+.destinations {
+  padding-top: 100px;
+  margin-top: -100px;
+
+  @include tablet {
+    padding-top: 80px;
+    margin-top: -80px;
+  }
+
+  @include mobile {
+    padding-top: 70px;
+    margin-top: -70px;
+  }
+}
+
+.destinations__inner {
+  padding: 80px 0;
+
+  background-color: $bg-white;
+
+  @include tablet {
+    padding: 50px 0;
+  }
+
+  @include mobile {
+    padding: 30px 0;
+  }
+}
+
+.destinations__heading {
+  margin-bottom: 30px;
+
+  @include H2Bold;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  @include mobile {
+    margin-bottom: 15px;
+
+    @include H3Bold;
+  }
+}
+
+.destinations__list {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr 300px;
+  grid-template-rows: 240px 240px;
+  grid-template-areas:
+    "first second second third"
+    "fourth fifth sixth third";
+  gap: 30px;
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "first second third"
+      "fourth fifth sixth";
+  }
+
+  @include tablet {
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-areas:
+      "first second"
+      "third fourth"
+      "fifth sixth";
+    gap: 15px;
+  }
+}
+
+.destination {
+  display: none !important;
+
+  &:nth-child(1) {
+    grid-area: first;
+  }
+
+  &:nth-child(2) {
+    grid-area: second;
+  }
+
+  &:nth-child(3) {
+    grid-area: third;
+  }
+
+  &:nth-child(4) {
+    grid-area: fourth;
+  }
+
+  &:nth-child(5) {
+    grid-area: fifth;
+  }
+
+  &:nth-child(6) {
+    grid-area: sixth;
+  }
+
+  &:nth-child(-n + 6) {
+    display: block !important;
+  }
+}
