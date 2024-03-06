@@ -2,15 +2,18 @@ import cn from "classnames";
 
 import { HomeProps } from "./Home.props";
 
-import { HeroSection, ToursSection } from "@/sections";
+import { HeroSection, ToursSection, DestinationsSection } from "@/sections";
 
 import styles from "./Home.module.scss";
 
-export const HomeView = ({ className, ...props }: HomeProps) => {
+export const HomeView = ({ className, tours, destinations, ...props }: HomeProps) => {
   return (
     <div className={cn(styles.view, className)} {...props}>
       <HeroSection id="hero" />
-      <ToursSection id="tours" />
+
+      <ToursSection id="tours" tours={tours} />
+
+      <DestinationsSection id="destinations" destinations={destinations} />
     </div>
   );
 };
