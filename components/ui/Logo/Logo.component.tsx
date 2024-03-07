@@ -8,7 +8,7 @@ import styles from "./Logo.module.scss";
 export const Logo: FC<LogoProps> = ({ className, ...props }) => {
   return (
     <div className={cn(styles.logo, className)} {...props}>
-      Logo
+      Feniks Travel
     </div>
   );
 };
