@@ -1,34 +1,39 @@
-import TourImage from "@/images/hero-background.jpg";
+import TurkeyImage from "@/images/destinations/turkey.jpg";
+import UaeImage from "@/images/destinations/uae.jpg";
+import VietnamImage from "@/images/destinations/vietnam.jpg";
+import EgyptImage from "@/images/destinations/egypt.jpg";
+import ThailandImage from "@/images/destinations/thailand.jpg";
+import GeorgiaImage from "@/images/destinations/georgia.jpg";
 
 export const destinations = [
   {
     id: 1,
-    title: "Egypt",
-    image: TourImage,
+    title: "turkey",
+    image: TurkeyImage,
   },
   {
     id: 2,
-    title: "Egypt",
-    image: TourImage,
+    title: "uae",
+    image: UaeImage,
   },
   {
     id: 3,
-    title: "Egypt",
-    image: TourImage,
+    title: "vietnam",
+    image: VietnamImage,
   },
   {
     id: 4,
-    title: "Egypt",
-    image: TourImage,
+    title: "egypt",
+    image: EgyptImage,
   },
   {
     id: 5,
-    title: "Egypt",
-    image: TourImage,
+    title: "thailand",
+    image: ThailandImage,
   },
   {
     id: 6,
-    title: "Egypt",
-    image: TourImage,
+    title: "georgia",
+    image: GeorgiaImage,
   },
 ];
