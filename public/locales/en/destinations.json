@@ -1,3 +1,10 @@
 {
-  "heading": "Destinations"
+  "heading": "Destinations",
+
+  "turkey": "Turkey",
+  "uae": "United Arab Emirates",
+  "vietnam": "Vietnam",
+  "egypt": "Egypt",
+  "thailand": "Thailand",
+  "georgia": "Georgia"
 }
