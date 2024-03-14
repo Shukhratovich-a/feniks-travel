@@ -69,7 +69,7 @@ export const Header: FC<HeaderProps> = ({ className, ...props }) => {
           <Logo className={cn(styles.header__logo)} />
 
           <div className={cn(styles.header__additions)}>
-            <Currency />
+            {/* <Currency /> */}
 
             <Language />
 
