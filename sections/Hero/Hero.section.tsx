@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import cn from "classnames";
 
 import { HeroSectionProps } from "./Hero.props";
@@ -11,6 +12,8 @@ import HeroBackground from "@/images/hero-background.jpg";
 import styles from "./Hero.module.scss";
 
 export const HeroSection: FC<HeroSectionProps> = ({ className, ...props }) => {
+  const { t } = useTranslation("hero");
+
   return (
     <section className={cn(styles.hero, className)} {...props}>
       <Image
@@ -25,9 +28,9 @@ export const HeroSection: FC<HeroSectionProps> = ({ className, ...props }) => {
 
       <Container className={cn(styles.hero__container)}>
         <div className={cn(styles.hero__content)}>
-          <h1 className={cn(styles.hero__content__heading)}>Tours and Trip packages Globally</h1>
+          <h1 className={cn(styles.hero__content__heading)}>{t("title")}</h1>
 
-          <p className={cn(styles.hero__content__title)}>Tours and Trip packages Globally</p>
+          <p className={cn(styles.hero__content__title)}>{t("subtitle")}</p>
         </div>
       </Container>
     </section>
