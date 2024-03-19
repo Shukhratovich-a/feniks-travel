@@ -11,7 +11,10 @@ export interface ITour {
 
   rating: number;
 
-  duration: number;
+  duration: {
+    days: number;
+    nights?: number;
+  };
 
   price: number;
 
