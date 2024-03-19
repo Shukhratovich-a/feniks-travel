@@ -1,82 +1,110 @@
-import TourImage from "@/images/hero-background.jpg";
+import TurkeyImage from "@/images/destinations/turkey.jpg";
+import UaeImage from "@/images/destinations/uae.jpg";
+import VietnamImage from "@/images/destinations/vietnam.jpg";
+import EgyptImage from "@/images/destinations/egypt.jpg";
+import ThailandImage from "@/images/destinations/thailand.jpg";
+import GeorgiaImage from "@/images/destinations/georgia.jpg";
 
 export const tours = [
   {
     id: 1,
-    title: "Centipede Tour - Guided Arizona Desert Tour by ATV",
-    image: TourImage,
+    title: "Tour - Istanbul, Turkey",
+    image: TurkeyImage,
     destination: {
       id: 1,
-      title: "Egypt",
-      image: TourImage,
+      title: "turkey",
+      image: TurkeyImage,
     },
     rating: 5,
-    duration: 7,
-    price: 180,
+    duration: {
+      days: 7,
+      nights: 6,
+    },
+    price: 550,
   },
+
   {
     id: 2,
-    title: "Centipede Tour - Guided Arizona Desert Tour by ATV",
-    image: TourImage,
+    title: "Tour - UAE, Dubai",
+    image: UaeImage,
     destination: {
       id: 1,
-      title: "Egypt",
-      image: TourImage,
+      title: "uae",
+      image: UaeImage,
     },
-    rating: 3,
-    duration: 7,
-    price: 180,
+    rating: 5,
+    duration: {
+      days: 4,
+      nights: 5,
+    },
+    price: 490,
   },
+
   {
     id: 3,
-    title: "Centipede Tour - Guided Arizona Desert Tour by ATV",
-    image: TourImage,
+    title: "Tour - Vietnam",
+    image: VietnamImage,
     destination: {
       id: 1,
-      title: "Egypt",
-      image: TourImage,
+      title: "vietnam",
+      image: VietnamImage,
     },
     rating: 5,
-    duration: 7,
-    price: 180,
+    duration: {
+      days: 13,
+      nights: 12,
+    },
+    price: 760,
   },
+
   {
     id: 4,
-    title: "Centipede Tour - Guided Arizona Desert Tour by ATV",
-    image: TourImage,
+    title: "Tour - Egypt. Sharm el-Sheikh",
+    image: EgyptImage,
     destination: {
       id: 1,
       title: "Egypt",
-      image: TourImage,
+      image: EgyptImage,
     },
     rating: 5,
-    duration: 7,
-    price: 180,
+    duration: {
+      days: 6,
+      nights: 5,
+    },
+    price: 350,
   },
+
   {
     id: 5,
-    title: "Centipede Tour - Guided Arizona Desert Tour by ATV",
-    image: TourImage,
+    title: "Tour - Thailand, Phuket",
+    image: ThailandImage,
     destination: {
       id: 1,
-      title: "Egypt",
-      image: TourImage,
-    },
-    rating: 4,
-    duration: 7,
-    price: 180,
-  },
-  {
-    id: 6,
-    title: "Centipede Tour - Guided Arizona Desert Tour by ATV",
-    image: TourImage,
-    destination: {
-      id: 1,
-      title: "Egypt",
-      image: TourImage,
+      title: "thailand",
+      image: ThailandImage,
     },
     rating: 5,
-    duration: 7,
-    price: 180,
+    duration: {
+      days: 11,
+      nights: 10,
+    },
+    price: 830,
+  },
+
+  {
+    id: 6,
+    title: "Tour - Georgia, Kombi",
+    image: GeorgiaImage,
+    destination: {
+      id: 1,
+      title: "georgia",
+      image: GeorgiaImage,
+    },
+    rating: 5,
+    duration: {
+      days: 8,
+      nights: 7,
+    },
+    price: 499,
   },
 ];
