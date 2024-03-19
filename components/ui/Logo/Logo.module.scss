@@ -1,15 +1,11 @@
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  margin: 0 auto;
-  height: 40px;
-  grid-area: logo;
+.logo__image {
+  width: auto;
 
-  @include TitleSemibold;
-  text-align: center;
+  @include tablet {
+    height: 70px;
+  }
 
-  background-color: $bg-white;
-  border-radius: 16px;
+  @include mobile {
+    height: 60px;
+  }
 }
