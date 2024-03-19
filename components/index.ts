@@ -4,6 +4,7 @@ export * from "./ui/Slider/Slider.component";
 export * from "./ui/Rating/Rating.component";
 export * from "./ui/Burger/Burger.component";
 export * from "./ui/Logo/Logo.component";
+export * from "./ui/Rating/Rating.component";
 
 export * from "./Language/Language.component";
 export * from "./Currency/Currency.component";
