@@ -7,7 +7,7 @@ import { HeroSectionProps } from "./Hero.props";
 
 import { Container } from "@/components";
 
-import HeroBackground from "@/images/hero-background.jpg";
+import HeroBackground from "@/images/hero-background.webp";
 
 import styles from "./Hero.module.scss";
 
@@ -24,6 +24,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ className, ...props }) => {
         placeholder="blur"
         fill
         quality={100}
+        priority
       />
 
       <Container className={cn(styles.hero__container)}>
