@@ -33,7 +33,10 @@ export const Language: FC<LanguageProps> = ({ className, isScrolled, ...props })
 
   const handleChange = async (locale: string) => {
     setIsOpen(false);
-    replace({ pathname, query }, "", { locale, scroll: false });
+
+    const currentQuery = { ...query, locale };
+
+    replace({ pathname, query: currentQuery }, "", { scroll: false });
   };
 
   const ref = useOutsideClick<HTMLDivElement>(handleClose);
