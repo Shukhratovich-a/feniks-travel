@@ -2,10 +2,9 @@ import cn from "classnames";
 
 import { HomeProps } from "./Home.props";
 
-import { HeroSection, ToursSection, DestinationsSection, ContactSection } from "@/sections";
+import { HeroSection, ToursSection, DestinationsSection, ContactSection, AboutSection } from "@/sections";
 
 import styles from "./Home.module.scss";
-import { AboutSection } from "@/sections/About/About.section";
 
 export const HomeView = ({ className, tours, destinations, ...props }: HomeProps) => {
   return (
@@ -18,7 +17,7 @@ export const HomeView = ({ className, tours, destinations, ...props }: HomeProps
 
       <AboutSection id="about" />
 
-      <ContactSection id="contact" />
+      <ContactSection id="contacts" />
     </div>
   );
 };
