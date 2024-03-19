@@ -1,24 +1,19 @@
-const { i18n } = require("./next-i18next.config");
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  i18n,
+  trailingSlash: true,
+  output: "export",
 
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "picsum.photos",
+        protocol: "http",
+        hostname: "fenikstravel.uz",
       },
       {
         protocol: "http",
         hostname: "localhost",
-        port: "3001",
-      },
-      {
-        protocol: "http",
-        hostname: "127.0.0.1",
         port: "3001",
       },
     ],
