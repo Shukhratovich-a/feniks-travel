@@ -43,3 +43,59 @@
     @include H3Bold;
   }
 }
+
+.contacts__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.contacts__card {
+  max-width: 830px;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.contacts__map {
+  height: 490px;
+
+  border: none;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  @include TitleMedium;
+  line-height: 24px !important;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  & + & {
+    margin-top: 60px;
+  }
+}
+
+.contacts__item__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item__icon {
+  flex-shrink: 0;
+}
