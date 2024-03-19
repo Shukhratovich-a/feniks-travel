@@ -21,11 +21,7 @@ export const AboutSection: FC<AboutSectionProps> = ({ className, ...props }) => 
           <div className={cn(styles.about__content)}>
             <h2 className={cn(styles.about__heading)}>{t("heading")}</h2>
 
-            <div className={cn(styles.about__paragraph)}>
-              <p>{`Welcome to Feniks tour, where every journey is an adventure waiting to unfold. As seasoned explorers and passionate travel enthusiasts, we specialize in curating unforgettable experiences that transcend the ordinary. Our mission is simple: to ignite the spirit of wanderlust in every traveler and create memories that last a lifetime.`}</p>
-              <br />
-              <p>{`At Feniks tour, we believe that travel is not just about visiting new places; it's about immersing yourself in diverse cultures, savoring unique cuisines, and forging connections that span continents. Whether you're seeking a thrilling safari in the heart of Africa, a tranquil retreat on a sun-kissed island, or a cultural odyssey through ancient cities, we have the expertise and dedication to craft the perfect itinerary tailored to your desires.`}</p>
-            </div>
+            <div className={cn(styles.about__paragraph)} dangerouslySetInnerHTML={{ __html: t("description") }} />
           </div>
 
           <Card className={cn(styles.about__card)}>
