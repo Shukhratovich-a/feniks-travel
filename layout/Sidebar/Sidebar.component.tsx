@@ -43,9 +43,7 @@ export const Sidebar: FC<SidebarProps> = ({ className, ...props }) => {
         <Container className={cn(styles.sidebar__container)}>
           <div className={cn(styles.sidebar__header)}>
             <div className={cn(styles.sidebar__header__inner)}>
-              <Link className={styles.sidebar__header__logo} href="/">
-                <Logo />
-              </Link>
+              <Logo />
 
               <div className={cn(styles.sidebar__header__additions)}>
                 <Burger isActive={true} onClick={menuController} />
