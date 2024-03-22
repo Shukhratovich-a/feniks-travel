@@ -33,7 +33,7 @@ export const ToursSection: FC<ToursSectionProps> = ({ className, tours, ...props
             pagination={true}
           >
             {tours.map((tour) => (
-              <SwiperSlide className={cn(styles.tour)} key={tour.id}>
+              <SwiperSlide className={cn(styles.tour)} key={tour.yuid}>
                 <TourCard tour={tour} />
               </SwiperSlide>
             ))}
