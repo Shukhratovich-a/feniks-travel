@@ -11,14 +11,15 @@ export interface ITour {
 
   rating: number;
 
-  duration: {
-    days: number;
-    nights?: number;
-  };
+  days: number;
+
+  nights?: number;
 
   price: number;
 
-  // createAt: Date;
+  yuid: string;
 
-  // updateAt: Date;
+  created_at: Date;
+
+  updated_at: Date;
 }
