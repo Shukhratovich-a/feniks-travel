@@ -1,7 +1,9 @@
 export interface IDestination {
   id: number;
 
-  name: string;
+  name?: string;
+
+  title: string;
 
   image: string;
 

@@ -24,9 +24,14 @@ export const TourCard: FC<TourCardProps> = ({ className, tour, ...props }) => {
       </div>
 
       <div className={cn(styles.card__content)}>
-        <span className={cn(styles.card__destination)} title={t(destination.name)}>
+        <span
+          className={cn(styles.card__destination)}
+          title={t(destination.name ? destination.name : destination.title)}
+        >
           <IconLocation className={cn(styles.card__destination__icon)} />
-          <span className={cn(styles.card__destination__title)}>{t(destination.name)}</span>
+          <span className={cn(styles.card__destination__title)}>
+            {t(destination.name ? destination.name : destination.title)}
+          </span>
         </span>
 
         <h2 className={cn(styles.card__title)} title={title}>
