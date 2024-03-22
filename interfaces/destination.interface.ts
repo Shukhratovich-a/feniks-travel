@@ -5,7 +5,9 @@ export interface IDestination {
 
   image: string;
 
-  // createAt: Date;
+  yuid: string;
 
-  // updateAt: Date;
+  created_at: Date;
+
+  updated_at: Date;
 }
