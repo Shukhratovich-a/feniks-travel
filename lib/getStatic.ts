@@ -1,4 +1,6 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { GetStaticPropsContext, GetStaticPropsResult } from "next";
+
 import i18nextConfig from "../next-i18next.config";
 
 export const getI18nPaths = () =>
@@ -13,18 +15,20 @@ export const getStaticPaths = () => ({
   paths: getI18nPaths(),
 });
 
-export async function getI18nProps(ctx, ns = ["common"]) {
+export const getI18nProps = async (ctx: GetStaticPropsContext, ns?: string[]) => {
   const locale = ctx?.params?.locale;
-  let props = {
-    ...(await serverSideTranslations(locale, ns)),
-  };
-  return props;
-}
 
-export function makeStaticProps(ns = []) {
-  return async function getStaticProps(ctx) {
+  let props = {
+    ...(await serverSideTranslations(String(locale), ns || ["common"])),
+  };
+
+  return props;
+};
+
+export const makeStaticProps = <T>(ns: string[] = []) => {
+  return async function getStaticProps(ctx: GetStaticPropsContext): Promise<GetStaticPropsResult<T>> {
     return {
-      props: await getI18nProps(ctx, ns),
+      props: await (<T>getI18nProps(ctx, ns)),
     };
   };
-}
+};
