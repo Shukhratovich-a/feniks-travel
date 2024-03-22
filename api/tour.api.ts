@@ -10,5 +10,5 @@ import { API } from "@/helpers/api.helper";
 export const getList = (options?: IGetListOptions) => {
   const query = queryString.stringifyUrl({ url: API.tour.getList, query: { ...options } });
 
-  return axios.get<ITour[]>(query);
+  return axios.get<{ tours: ITour[] }>(query);
 };
