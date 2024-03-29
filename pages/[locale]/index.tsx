@@ -7,6 +7,9 @@ import { IDestination } from "@/interfaces/destination.interface";
 import { getList as getToursList } from "@/api/tour.api";
 import { getList as getDestinationList } from "@/api/destination.api";
 
+import { tours } from "@/data/tours";
+import { destinations } from "@/data/destinations";
+
 import { withLayout } from "@/layout/Layout";
 
 import { getI18nProps, getStaticPaths } from "@/lib/getStatic";
@@ -18,12 +21,6 @@ const HomePage: FC<HomePageProps> = ({ tours, destinations }: HomePageProps) => 
 };
 
 const getStaticProps: GetStaticProps<HomePageProps> = async (context) => {
-  const {
-    data: { tours },
-  } = await getToursList();
-
-  const { data: destinations } = await getDestinationList();
-
   return {
     props: {
       tours,

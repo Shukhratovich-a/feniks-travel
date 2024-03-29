@@ -20,7 +20,7 @@ export const TourCard: FC<TourCardProps> = ({ className, tour, ...props }) => {
   return (
     <Card className={cn(styles.card, className)} {...props}>
       <div className={cn(styles.card__image)}>
-        <Image src={`${DOMAIN}${image}`} alt={title} sizes="100%" fill priority />
+        <Image src={image} alt={title} sizes="100%" fill priority />
       </div>
 
       <div className={cn(styles.card__content)}>
