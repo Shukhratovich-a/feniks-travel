@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-white;
+
+  border: none;
+  border-radius: 200px;
+  background-color: $bg-accent;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bg-accent-hover;
+  }
+
+  &:active {
+    background-color: $bg-accent-active;
+  }
+}
