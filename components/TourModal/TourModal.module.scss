@@ -1,0 +1,40 @@
+.modal {
+  max-width: 400px !important;
+  width: 100% !important;
+  padding: 0 20px;
+  padding-bottom: 20px;
+
+  &__heading {
+    margin-bottom: 20px;
+
+    @include TitleMedium;
+    text-align: center;
+  }
+
+  &__back {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    color: $text-accent;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+  }
+}
+
+.main {
+  gap: 20px;
+
+  &__button {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+
+    & + & {
+      margin-top: 10px;
+    }
+  }
+}
