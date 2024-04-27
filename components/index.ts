@@ -14,5 +14,7 @@ export * from "./Currency/Currency.component";
 export * from "./TourCard/TourCard.component";
 export * from "./DestinationCard/DestinationCard.component";
 
+export * from "./TourModal/TourModal.component";
+
 export * from "./TourBookForm/TourBookForm.component";
 export * from "./TourCallbackForm/TourCallbackForm.component";
