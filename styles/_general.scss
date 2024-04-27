@@ -28,6 +28,10 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: $text-primary;
+
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
 }
 
 img,
