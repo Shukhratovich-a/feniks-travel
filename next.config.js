@@ -8,6 +8,10 @@ const nextConfig = {
     unoptimized: true,
     remotePatterns: [
       {
+        protocol: "https",
+        hostname: "api.fenikstravel.uz",
+      },
+      {
         protocol: "http",
         hostname: "fenikstravel.uz",
       },
