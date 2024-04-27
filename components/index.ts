@@ -5,9 +5,14 @@ export * from "./ui/Rating/Rating.component";
 export * from "./ui/Burger/Burger.component";
 export * from "./ui/Logo/Logo.component";
 export * from "./ui/Rating/Rating.component";
+export * from "./ui/Modal/Modal.component";
+export * from "./ui/Button/Button.component";
 
 export * from "./Language/Language.component";
 export * from "./Currency/Currency.component";
 
 export * from "./TourCard/TourCard.component";
 export * from "./DestinationCard/DestinationCard.component";
+
+export * from "./TourBookForm/TourBookForm.component";
+export * from "./TourCallbackForm/TourCallbackForm.component";
