@@ -9,3 +9,6 @@ export { default as IconMail } from "./mail.svg";
 export { default as IconTime } from "./time.svg";
 export { default as IconAddress } from "./address.svg";
 export { default as IconPerson } from "./person.svg";
+
+export { default as IconModalClose } from "./modal-close.svg";
+export { default as IconModalBack } from "./back.svg";
