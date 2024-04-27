@@ -91,7 +91,5 @@
   padding: 10px;
   padding-bottom: 0;
 
-  string {
-    @include Body3Semibold;
-  }
+  @include Body3Regular;
 }
