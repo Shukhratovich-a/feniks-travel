@@ -58,7 +58,7 @@ export const ContactSection: FC<ContactSectionProps> = ({ className, ...props })
             <Card className={cn(styles.contacts__card)}>
               <iframe
                 className={cn(styles.contacts__map)}
-                src="https://yandex.uz/map-widget/v1/?ll=69.229873%2C41.338269&mode=whatshere&whatshere%5Bpoint%5D=69.228200%2C41.339612&whatshere%5Bzoom%5D=17&z=16.8"
+                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d374.56152849568514!2d69.2662824!3d41.3199087!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE5JzExLjciTiA2OcKwMTUnNTguNiJF!5e0!3m2!1sru!2s!4v1715857560693!5m2!1sru!2s"
                 width="830"
                 height="490"
                 allowFullScreen
