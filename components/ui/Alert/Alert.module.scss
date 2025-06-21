@@ -1,0 +1,44 @@
+.alert {
+  position: relative;
+
+  padding: 16px;
+  padding-top: 16px;
+
+  border-radius: 6px;
+
+  &--primary {
+    background-color: $state-success;
+  }
+
+  &--danger {
+    background-color: $state-danger-light;
+
+    .alert__button {
+      color: $state-danger;
+    }
+  }
+}
+
+.alert__button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: -10px;
+
+  color: $state-success-light;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+}

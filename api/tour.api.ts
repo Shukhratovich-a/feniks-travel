@@ -15,7 +15,7 @@ export const getList = (options?: IGetListOptions) => {
 };
 
 export const bookTour = (credentials: IBookTour) => {
-  return axios.post("/payme/pay-link/", { ...credentials });
+  return axios.post<{ pay_link: string }>("/payme/pay-link/", { ...credentials });
 };
 
 export const callbackTour = (credentials: IBookTour) => {

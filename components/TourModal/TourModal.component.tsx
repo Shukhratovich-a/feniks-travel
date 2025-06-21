@@ -25,7 +25,7 @@ export const TourModal: FC<TourModalProps> = ({ className, isOpen, setIsOpen, on
               <IconModalBack />
             </button>
 
-            <TourBookForm />
+            <TourBookForm tour={tour} />
           </div>
         );
 
@@ -52,7 +52,7 @@ export const TourModal: FC<TourModalProps> = ({ className, isOpen, setIsOpen, on
           </div>
         );
     }
-  }, [modalState]);
+  }, [modalState, tour]);
 
   return (
     <Modal

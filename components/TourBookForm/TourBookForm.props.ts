@@ -1,3 +1,7 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-export interface TourBookFormProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+import { ITour } from "@/interfaces/tour.interface";
+
+export interface TourBookFormProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+  tour: ITour;
+}

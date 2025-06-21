@@ -7,6 +7,7 @@ export * from "./ui/Logo/Logo.component";
 export * from "./ui/Rating/Rating.component";
 export * from "./ui/Modal/Modal.component";
 export * from "./ui/Button/Button.component";
+export * from "./ui/Alert/Alert.component";
 
 export * from "./Language/Language.component";
 export * from "./Currency/Currency.component";
